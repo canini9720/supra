@@ -1,0 +1,6 @@
+.settings
+/supra-main/*.classpath
+/supra-main/*.project
+/supra-main/target
+/supra-main/target/classes/com/supra
+/supra-main/target/test-classes/com/supra
