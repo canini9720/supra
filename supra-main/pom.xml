@@ -49,5 +49,6 @@
 </build>
 	<modules>
 		<module>supra-web</module>
+		<module>supra-common</module>
 	</modules>
 </project>

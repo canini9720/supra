@@ -13,7 +13,15 @@
 	
 	
 	<dependencies>
-		
-		
+		<dependency>
+			<groupId>com.supra</groupId>
+			<artifactId>supra-common</artifactId>
+			<version>${supra.common.version}</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>com.supra</groupId>
+			<artifactId>supra-n</artifactId>
+			<version>${supra.version}</version>
+		</dependency> -->
 </dependencies>
 </project>

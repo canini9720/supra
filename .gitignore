@@ -9,3 +9,8 @@
 /supra-main/supra-web/target/classes/com/supra/servlet/*.class
 /supra-main/supra-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
 /supra-main/supra-web/target/m2e-wtp/web-resources/META-INF/maven/com.supra/supra-web/pom.properties
+/supra-main/supra-common/target/classes/META-INF/*.MF
+/supra-main/supra-common/target/classes/com/supra/common/*.class
+/supra-main/supra-common/target/classes/META-INF/maven/com.supra/supra-common
+/supra-main/supra-web/target/m2e-wtp/web-resources/META-INF/maven/com.supra/supra-web
+/supra-main/supra-common/target/classes/com/supra/common/implementation

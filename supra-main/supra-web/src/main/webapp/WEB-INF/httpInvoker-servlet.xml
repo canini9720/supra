@@ -14,10 +14,10 @@
 		
 		
     
-	<bean id="testService" class="com.supra.implementation.TestServiceImpl" />
+	<!-- <bean id="testService" class="com.supra.implementation.TestServiceImpl" />
    <bean name="/testServiceHost"  class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
         <property name="service" ref="testService" />  
             <property name="serviceInterface" value="com.novaservice.service.TestService">
         </property>
-    </bean> 
+    </bean>  -->
 </beans>
