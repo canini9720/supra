@@ -4,3 +4,8 @@
 /supra-main/target
 /supra-main/target/classes/com/supra
 /supra-main/target/test-classes/com/supra
+*.classpath
+.project
+/supra-main/supra-web/target/classes/com/supra/servlet/*.class
+/supra-main/supra-web/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+/supra-main/supra-web/target/m2e-wtp/web-resources/META-INF/maven/com.supra/supra-web/pom.properties
