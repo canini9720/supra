@@ -18,10 +18,10 @@
 			<artifactId>supra-common</artifactId>
 			<version>${supra.common.version}</version>
 		</dependency>
-		<!-- <dependency>
+		 <dependency>
 			<groupId>com.supra</groupId>
-			<artifactId>supra-n</artifactId>
+			<artifactId>supra-tv</artifactId>
 			<version>${supra.version}</version>
-		</dependency> -->
+		</dependency>
 </dependencies>
 </project>

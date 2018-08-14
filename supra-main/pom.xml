@@ -50,5 +50,6 @@
 	<modules>
 		<module>supra-web</module>
 		<module>supra-common</module>
+		<module>supra-tv</module>
 	</modules>
 </project>
