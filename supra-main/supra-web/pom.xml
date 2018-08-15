@@ -3,12 +3,12 @@
   <parent>
     <groupId>com.supra</groupId>
     <artifactId>supra-main</artifactId>
-    <version>{supra.version}</version>
+    <version>${supra.version}</version>
   </parent>
   <artifactId>supra-web</artifactId>
   <packaging>war</packaging>
   <build>
-		<finalName>novaservice-web</finalName>
+		<finalName>supra-web</finalName>
 	</build>
 	
 	

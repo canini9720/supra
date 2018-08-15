@@ -20,3 +20,8 @@
 /supra-main/supra-tv/target/classes/com/supra/model
 /supra-main/supra-tv/target/classes/com/supra/service
 /supra-main/supra-tv/target/classes/com/supra/soap
+/supra-main/supra-common/target/maven-archiver
+/supra-main/supra-common/target/maven-status/maven-compiler-plugin/compile/default-compile
+/supra-main/supra-web/target
+/supra-main/supra-common/target
+/supra-main/supra-tv/target

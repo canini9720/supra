@@ -3,9 +3,10 @@
   <parent>
     <groupId>com.supra</groupId>
     <artifactId>supra-main</artifactId>
-    <version>{supra.version}</version>
+    <version>${supra.version}</version>
   </parent>
   <artifactId>supra-tv</artifactId>
+  
   <dependencies>
   	<dependency>
 		<groupId>com.supra</groupId>

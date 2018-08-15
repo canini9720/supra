@@ -3,10 +3,11 @@
   <parent>
     <groupId>com.supra</groupId>
     <artifactId>supra-main</artifactId>
-    <version>{supra.version}</version>
+    <version>${supra.version}</version>
   </parent>
   <artifactId>supra-common</artifactId>
   <version>${supra.common.version}</version>
+  <name>supra-common</name>
 <properties>
 
 		<!-- Spring -->
