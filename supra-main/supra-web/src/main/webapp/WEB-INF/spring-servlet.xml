@@ -41,7 +41,7 @@
       </property>
       <property name="jpaProperties">
          <props>
-            <prop key="hibernate.default_schema">TEST</prop>
+            <prop key="hibernate.default_schema">ROOT</prop>
          </props>
       </property>
    	</bean>
