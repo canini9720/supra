@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.supra.model.SupraLogEntity;
+import com.supra.model.SupraLogEntityDefault;
 
 @Service("commonService")
 @Transactional
@@ -25,5 +26,13 @@ public class CommonServiceImpl implements CommonService {
 		commonDAO.saveSupraLog(entity);
 
 	}
+
+	@Override
+	public void saveSupraLogWithDefaultTransaction(SupraLogEntityDefault entity) throws Exception {
+		commonDAO.saveSupraLogDefault(entity);
+		
+	}
+
+	
 
 }

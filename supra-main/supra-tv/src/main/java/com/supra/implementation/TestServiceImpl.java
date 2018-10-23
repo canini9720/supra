@@ -8,6 +8,7 @@ import com.supra.common.implementation.CommonDAO;
 import com.supra.common.implementation.CommonService;
 import com.supra.dto.TestDTO;
 import com.supra.model.SupraLogEntity;
+import com.supra.model.SupraLogEntityDefault;
 import com.supra.model.TestEntity;
 import com.supra.service.TestService;
 
@@ -24,6 +25,12 @@ public class TestServiceImpl implements TestService {
 	
 	@Override
 	public Long saveTest(TestDTO dto) throws Exception {
+		
+		
+		SupraLogEntityDefault supraLogDefault=new SupraLogEntityDefault();
+		supraLogDefault.setLog("This default is log");
+		commonService.saveSupraLogWithDefaultTransaction(supraLogDefault);
+		
 		TestEntity testEntity=new TestEntity();
 		testEntity.setName("Tester45");
 		
