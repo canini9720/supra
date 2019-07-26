@@ -13,7 +13,7 @@ public class NormalRequestWrapper extends HttpServletRequestWrapper {
 
     @Override
     public String[] getParameterValues(String parameter) {
-    	System.out.println("getParameterValues="+parameter);
+    	//System.out.println("getParameterValues="+parameter);
         String[] values = super.getParameterValues(parameter);
         if (values == null) {
             return null;
@@ -31,9 +31,9 @@ public class NormalRequestWrapper extends HttpServletRequestWrapper {
     @Override
     public String getParameter(String parameter) {
         String value = super.getParameter(parameter);
-        System.out.println("b4="+value);
+        //System.out.println("b4="+value);
         value=stripXSS(value);
-        System.out.println("after="+value);
+        //System.out.println("after="+value);
         return value;
     }
 
