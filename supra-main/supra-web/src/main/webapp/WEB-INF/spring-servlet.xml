@@ -43,7 +43,8 @@
       </property>
       <property name="jpaProperties">
          <props>
-            <prop key="hibernate.default_schema">ROOT</prop>
+            <prop key="hibernate.default_schema">TEST</prop>
+            <prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
          </props>
       </property>
    	</bean>
