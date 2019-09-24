@@ -34,7 +34,7 @@ public class PhotoUploadController {
 	  if (!inputFile.isEmpty()) {
 	   try {
 	    String originalFilename = inputFile.getOriginalFilename();
-	    File destinationFile = new File("C:\\Users\\Administrator\\Desktop\\pics"+  File.separator + originalFilename);
+	    File destinationFile = new File("C:\\Users\\ahash\\OneDrive\\Desktop\\New folder"+  File.separator + originalFilename);
 	    inputFile.transferTo(destinationFile);
 	    fileInfo.setFileName(destinationFile.getPath());
 	    fileInfo.setFileSize(inputFile.getSize());

@@ -23,5 +23,10 @@
 			<artifactId>supra-tv</artifactId>
 			<version>${supra.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.supra</groupId>
+			<artifactId>supra-upload</artifactId>
+			<version>${supra.version}</version>
+		</dependency>
 </dependencies>
 </project>
