@@ -21,8 +21,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 
-@Configuration
-@ComponentScan("com.supra")
+//@Configuration
+//@ComponentScan("com.supra") //disabled for junit test
 public class CommonTestConfig {
 
 	@Bean
