@@ -20,6 +20,9 @@ import org.springframework.stereotype.Component;
 
 import com.supra.dto.TestDTO;
 import com.supra.dto.TestSoapDTO;
+import com.supra.model.SMSInternalAlertEntity;
+import com.supra.model.SMSTextMsgEntity;
+import com.supra.service.CommonService;
 import com.supra.service.TestService;
 
 
@@ -35,6 +38,9 @@ public class TestEndpoint {
 	
 	@Autowired
 	TestService testService;
+	
+	@Autowired
+	CommonService commonService;
 	
 	@Resource
 	WebServiceContext ctx;
@@ -71,6 +77,12 @@ public class TestEndpoint {
 			
 			refNoHolder.value = 6548971l;
 			refNoHolder.value = testService.saveTest(testDTO);
+			
+			//List<SMSTextMsgEntity> listAllSMS=commonService.getAllSMSText();
+			//System.out.println("listAllSMS="+listAllSMS);
+			
+			SMSInternalAlertEntity entity=commonService.smsAlert(30L, "MSG003");
+			System.out.println("Entity="+entity);
 			
 		}catch(Exception ex){
 			
