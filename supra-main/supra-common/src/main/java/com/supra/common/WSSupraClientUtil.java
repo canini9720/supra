@@ -31,7 +31,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-public class WSClientUtil {
+public class WSSupraClientUtil {
 	
 	/*public SOAPEnvelope includeDatNamespace(SOAPEnvelope envelope) throws SOAPException{
 		

@@ -1,5 +1,7 @@
 package com.supra.implementation;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,7 +28,8 @@ public class TestServiceImpl implements TestService {
 		//testEntity.setId(1l);
 		testEntity.setName("Tester45");
 		testDAO.saveTest(testEntity);
-		System.out.println("cussesfuly inserted");
+		System.out.println("sucssesfuly inserted");
+		
 		return testEntity.getId();
 	}
 

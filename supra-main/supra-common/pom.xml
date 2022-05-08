@@ -1,14 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.supra</groupId>
-    <artifactId>supra-main</artifactId>
-    <version>${supra.version}</version>
-  </parent>
-  <artifactId>supra-common</artifactId>
-  <version>${supra.common.version}</version>
-  <name>supra-common</name>
-<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.supra</groupId>
+		<artifactId>supra-main</artifactId>
+		<version>${supra.version}</version>
+	</parent>
+	<artifactId>supra-common</artifactId>
+	<version>${supra.common.version}</version>
+	<name>supra-common</name>
+	<properties>
 
 		<!-- Spring -->
 		<spring-framework.version>4.3.1.RELEASE</spring-framework.version>
@@ -56,11 +57,11 @@
 			<artifactId>spring-aspects</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
-<dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring-framework.version}</version>
-	</dependency>
+		</dependency>
 
 		<!-- Hibernate -->
 		<dependency>
@@ -217,7 +218,7 @@
 			<version>1.1.1</version>
 		</dependency>
 
-		
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -257,46 +258,56 @@
 			<artifactId>tika-parsers</artifactId>
 			<version>1.16</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+
+
+
+		<!-- 
+		Add these below dependencies or add 'supra-main\Readme\supra-services run error.zip' jar in below path to avoid build error on eclipse
+		D:\ws-supra\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\supra-web\WEB-INF\lib
 		
+
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.stream.buffer</groupId>
+			<artifactId>streambuffer</artifactId>
+			<version>1.5.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>policy</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.gmbal</groupId>
+			<artifactId>gmbal-api-only</artifactId>
+			<version>3.2.0-b003</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.ha</groupId>
+			<artifactId>ha-api</artifactId>
+			<version>3.1.9</version>
+		</dependency>
 		
-		
-		 <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core -->
-		 
-    <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-core</artifactId>
-        <version>2.2.7</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/com.sun.xml.stream.buffer/streambuffer -->
-    <dependency>
-        <groupId>com.sun.xml.stream.buffer</groupId>
-        <artifactId>streambuffer</artifactId>
-        <version>1.5.3</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
-    <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>2.2.7</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/com.sun.xml.ws/policy -->
-    <dependency>
-        <groupId>com.sun.xml.ws</groupId>
-        <artifactId>policy</artifactId>
-        <version>2.3.1</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.glassfish.gmbal/gmbal-api-only -->
-    <dependency>
-        <groupId>org.glassfish.gmbal</groupId>
-        <artifactId>gmbal-api-only</artifactId>
-        <version>3.2.0-b003</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.glassfish.ha/ha-api -->
-    <dependency>
-        <groupId>org.glassfish.ha</groupId>
-        <artifactId>ha-api</artifactId>
-        <version>3.1.9</version>
-    </dependency>
+		-->
 	</dependencies>
 
 </project>

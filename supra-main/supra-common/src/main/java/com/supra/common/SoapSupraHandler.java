@@ -22,7 +22,7 @@ import com.ctc.wstx.util.ExceptionUtil;
 
 @Component
 @WebFault
-public class SoapHandler implements SOAPHandler<SOAPMessageContext> {
+public class SoapSupraHandler implements SOAPHandler<SOAPMessageContext> {
 	
 	
     public Set<QName> getHeaders() {

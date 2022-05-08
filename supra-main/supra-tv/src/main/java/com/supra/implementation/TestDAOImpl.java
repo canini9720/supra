@@ -13,13 +13,7 @@ public class TestDAOImpl extends JdbcCommonDao implements TestDAO{
 		System.out.println("tested");
 	}
 
-
-
-	/*@Override
-	public void saveTest(TestEntity entity) throws Exception {
-		this.getEm().persist(entity);
-		
-	}*/
+	
 
 
 }

@@ -20,7 +20,7 @@
 		<wss:service>
 			<ws:service bean="#testEndpoint">
 				<ws:handlers>
-					<ref bean="soapHandler"/>
+					<ref bean="soapSupraHandler"/>
 				</ws:handlers>
 			</ws:service>
 		</wss:service>

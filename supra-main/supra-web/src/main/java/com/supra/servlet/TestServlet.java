@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.supra.common.DateUtil;
+import com.supra.common.DateSupraUtil;
 
 /**
  * Servlet implementation class TestServlet

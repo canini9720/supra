@@ -20,9 +20,7 @@ import org.springframework.stereotype.Component;
 
 import com.supra.dto.TestDTO;
 import com.supra.dto.TestSoapDTO;
-import com.supra.model.SMSInternalAlertEntity;
-import com.supra.model.SMSTextMsgEntity;
-import com.supra.service.CommonService;
+import com.supra.service.CommonSupraService;
 import com.supra.service.TestService;
 
 
@@ -40,7 +38,7 @@ public class TestEndpoint {
 	TestService testService;
 	
 	@Autowired
-	CommonService commonService;
+	CommonSupraService commonService;
 	
 	@Resource
 	WebServiceContext ctx;
@@ -48,7 +46,7 @@ public class TestEndpoint {
 	
 	@WebMethod(action="testRequest")
 	public void testRequest(@WebParam(name="testRequest") TestSoapDTO testSoapDTO,
-								   	   @WebParam(name = "ReferenceNo", mode = WebParam.Mode.OUT) Holder<Long> refNoHolder) throws Exception{
+								   	   @WebParam(name = "result", mode = WebParam.Mode.OUT) Holder<Long> refNoHolder) throws Exception{
 		
 		TestDTO testDTO = new TestDTO();
 		
@@ -74,20 +72,20 @@ public class TestEndpoint {
 	
 		try{
 			//Thread.sleep(20000l);
-			
+			System.out.println("ctx=======>"+ctx);
+			System.out.println("commonService=======>"+commonService);
+			System.out.println("testService=======>"+testService);
 			refNoHolder.value = 6548971l;
 			refNoHolder.value = testService.saveTest(testDTO);
 			
-			//List<SMSTextMsgEntity> listAllSMS=commonService.getAllSMSText();
-			//System.out.println("listAllSMS="+listAllSMS);
+			System.out.println("refNoHolder.value=="+refNoHolder.value);
 			
-			SMSInternalAlertEntity entity=commonService.smsAlert(30L, "MSG003");
-			System.out.println("Entity="+entity);
 			
 		}catch(Exception ex){
 			
 			throw ex;
 		}
 	}
+	
 
 }

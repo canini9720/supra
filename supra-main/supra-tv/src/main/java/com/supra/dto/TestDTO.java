@@ -3,19 +3,23 @@ import java.io.Serializable;
 
 public class TestDTO implements Serializable{
 
-	private Long emiratesID;
-	private Long referenceNo;
-	public Long getEmiratesID() {
-		return emiratesID;
+	private String name;
+	private Integer age;
+	
+	public String getName() {
+		return name;
 	}
-	public void setEmiratesID(Long emiratesID) {
-		this.emiratesID = emiratesID;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public Long getReferenceNo() {
-		return referenceNo;
+	public Integer getAge() {
+		return age;
 	}
-	public void setReferenceNo(Long referenceNo) {
-		this.referenceNo = referenceNo;
+	public void setAge(Integer age) {
+		this.age = age;
 	}
+	
+	
+	
 	
 }

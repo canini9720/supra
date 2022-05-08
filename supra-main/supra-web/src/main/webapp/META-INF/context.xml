@@ -15,10 +15,6 @@
   limitations under the License.
 --><!-- The contents of this file will be loaded for each web application --><Context>
 
-	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxActive="100"  maxIdle="30" maxWait="10000" 
-	name="jdbc/TESTService" type="javax.sql.DataSource" 
-	url="jdbc:oracle:thin:@localhost:1521/xe" 
-	username="test"  password="root" />
 
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->

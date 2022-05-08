@@ -25,7 +25,7 @@
     
     <!-- Datasource -->
 	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean" >
-   		<property name="jndiName" value="java:comp/env/jdbc/TESTService"/>
+   		<property name="jndiName" value="java:comp/env/jdbc/TestService"/>
 	</bean>
     
      <bean id="entityManagerFactoryBean" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
