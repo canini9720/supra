@@ -12,7 +12,7 @@
 	<properties>
 
 		<!-- Spring -->
-		<spring-framework.version>4.3.1.RELEASE</spring-framework.version>
+		<spring-framework.version>5.2.20.RELEASE</spring-framework.version>
 		<!-- AsperctJ -->
 		<aspectj.version>1.7.4</aspectj.version>
 
